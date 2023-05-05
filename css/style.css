@@ -1,0 +1,131 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 -1px 0 #ddd;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.btn:focus {
+    box-shadow: none;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.head-img{
+    width: 100%;
+    height: 219px;
+    object-fit: cover;
+}
+.slider-img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.img_fot{
+    background-image: url(../image/10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.axionic-color {
+    color: #ff6200;
+}
+.gll_crd {
+    position: relative;
+    width: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+}
+
+.gll_crd:hover .overlay {
+    opacity: .6;
+}
+
+.crd_text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* media query start here */
+/* @media only screen and (max-width: 576px){
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 79%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #000000;
+    }
+} */
+@media only screen and (min-width: 576px) and (max-width: 768px){
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 81%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #000000;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 60%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #000000;
+    }
+}
+/* media query end here */
